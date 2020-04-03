@@ -22,7 +22,7 @@ suppress-cargo-output = ["chan"]
 
 [dependencies]
 chan = { version = "0.1", optional = true }
-clap = "2.33"
+clap = { version = "2.33", default-features = false, features = ["color", "vec_map"] }
 env_logger = "0.6"
 pulldown-cmark = "0.5"
 lazy_static = "1"
